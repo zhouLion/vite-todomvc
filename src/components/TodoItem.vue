@@ -40,7 +40,7 @@ export default defineComponent({
 
     const todoListClass = computed(() => {
       const result = {
-        completed: props.todo.completed,
+        completed: props.todo ? props.todo.completed : '',
         editing: props.todo === todoOnEditting
       };
       console.log(result);
